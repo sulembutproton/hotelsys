@@ -1,0 +1,22 @@
+{% extends 'guest/base.html' %}
+
+
+{% block content %}
+<a href="{% url 'start' %}">Back</a>
+
+<div class="wrap">
+    <a class="button-custom" href="{% url 'guest:register' %}">
+        Register
+    </a>
+    <a class="button-custom" href="{% url 'guest:login' %}">
+        Login
+    </a>
+
+  </div>
+
+{% endblock content %}
+
+
+{% block more_links %}
+
+{% endblock more_links %}
